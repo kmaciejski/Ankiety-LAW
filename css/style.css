@@ -1,0 +1,14 @@
+body{
+    min-width: 150px;
+}
+#divProgress {
+    width: 100%;
+    background-color: grey;
+    
+}
+  
+#divBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(12, 197, 12);
+}

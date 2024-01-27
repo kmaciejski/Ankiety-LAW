@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Ankiety LAW",
+    "version": "1.0.0",
+    "author": "Kajetan Maciejski",
+    "action": {
+        "default_icon": {
+            "16": "/resources/icon16.png",
+            "32": "/resources/icon32.png",
+            "48": "/resources/icon48.png",
+            "128": "/resources/icon128.png"
+        },
+        "default_title": "Ankiety LAW",
+        "default_popup": "html/popup.html"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+      ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://dziekanat.law.mil.pl/*",
+                "https://developer.chrome.com/*"
+            ],
+            "js": [
+                "js/content-script.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "/resources/icon16.png",
+        "32": "/resources/icon32.png",
+        "48": "/resources/icon48.png",
+        "128": "/resources/icon128.png"
+    }
+}
